@@ -1,0 +1,160 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+
+.triggerFlow {
+  max-width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.133) 0px 3.2px 7.2px 0px;
+  margin:0px 10px 20px;
+
+    .span
+    {
+      position: relative;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    //height: 65px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: 10px;
+    color:gray;
+    }
+
+  .container {
+   // max-width: 300px;
+    margin: 0px auto;
+   // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+   // background-image: url(https://bdocollab.sharepoint.com/sites/SPFX_Test_humeraK/SiteAssets/sitepages/admin/notify.jpeg);
+   // background-repeat: no-repeat;
+   // background-size: contain;
+  
+  }
+
+  .row {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    color:black;
+   // background-color: $ms-color-themeDark;
+   // padding: 20px;
+    margin: 0px;
+   
+   
+  }
+
+  .image {
+    width: 100%;
+   
+   
+  }
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+   
+    
+  }
+
+  .title {
+    @include ms-font-xl;
+    @include ms-fontColor-white;
+  }
+
+  .subTitle {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .button {
+    // Our button
+    text-decoration: none;
+   
+    // Primary Button
+    min-width: 80px;
+    background-color: $ms-color-themePrimary;
+    border-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+
+    // Basic Button
+    outline: transparent;
+    position: relative;
+    font-family: "Segoe UI WestEuropean","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: $ms-font-size-m;
+    font-weight: $ms-font-weight-regular;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 16px;
+
+    .label {
+      font-weight: $ms-font-weight-semibold;
+      font-size: $ms-font-size-m;
+      height: 32px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+ 
+  .statusDiv{
+    color: #563d7c;
+    FONT-STYLE: italic;
+  }
+  
+}
+
+
+
+.react-confirm-alert-button-group > button {
+  outline: none;
+ /* background: #333;*/
+  /*border: none;*/
+  display: inline-block;
+  padding: 6px 18px;
+  /*color: #eee;*/
+  margin-right: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+
+  background-color: rgb(66, 47, 95);
+  border: 1px solid rgb(66, 47, 95);
+  color: rgb(255, 255, 255);
+}
+
+.react-confirm-alert-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  /*background: rgba(255, 255, 255, 0.9);*/
+  background:rgba(0, 0, 0, 0.4);
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  opacity: 0;
+  -webkit-animation: react-confirm-alert-fadeIn 0.5s 0.2s forwards;
+  -moz-animation: react-confirm-alert-fadeIn 0.5s 0.2s forwards;
+  -o-animation: react-confirm-alert-fadeIn 0.5s 0.2s forwards;
+  animation: react-confirm-alert-fadeIn 0.5s 0.2s forwards;
+}
+
+.react-confirm-alert-body h1 {
+  color:#563d7c;
+}
